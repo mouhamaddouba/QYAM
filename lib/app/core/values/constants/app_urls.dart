@@ -1,17 +1,20 @@
 abstract class AppUrls {
   static const String baseUrl = 'http://104.238.159.155:4041/qiam-api';
 
-  ///API accounts
+  //region Accounts
   static String login() => '/api/MobAccounts/Login';
+  //endregion Accounts
 
-  ///API classes
+  /* region Dashboard */
+
+  //region classes
   static String classes({
     required String studyYear,
     required bool isStudent,
   }) =>
       '/api/MobWeekPrograms/GetFiltered?studyYear=$studyYear&isStudent=$isStudent';
 
-  ///API payments
+  //region payments
   static String payments({
     required String studyYear,
     required int pageSize,
@@ -20,7 +23,7 @@ abstract class AppUrls {
   }) =>
       '/api/MobPayments/GetFiltered?studyYear=$studyYear&pageSize=$pageSize&pageNumber=$pageNumber&withPaging=$withPaging';
 
-  ///API attendances
+  //region attendances
   static String attendances({
     required String studyYear,
     required String year,
@@ -28,7 +31,7 @@ abstract class AppUrls {
   }) =>
       '/api/MobAttendances/GetFiltered?studyYear=$studyYear&year=$year&month=$month';
 
-  ///API late
+  //region lates
   static String lates({
     required String studyYear,
     required int pageSize,
@@ -39,7 +42,7 @@ abstract class AppUrls {
   }) =>
       '/api/MobTeacherLates/GetFiltered?studyYear=$studyYear&pageSize=$pageSize&pageNumber=$pageNumber&withPaging=$withPaging&toDate=$toDate&fromDate=$fromDate';
 
-  ///API student_exams
+  //region students exams
   static String studentExams({
     required String studyYear,
     required int pageSize,
@@ -49,7 +52,7 @@ abstract class AppUrls {
   }) =>
       '/api/MobExams/GetFilteredStudent?culture=ar-SY&studyYear=$studyYear&pageSize=$pageSize&pageNumber=$pageNumber&withPaging=$withPaging&status=$status';
 
-  ///API teacher_exams
+  //region teacher exams
   static String teacherExams({
     required String studyYear,
     required int pageSize,
@@ -59,10 +62,13 @@ abstract class AppUrls {
   }) =>
       '/api/MobExams/GetFiltered?studyYear=$studyYear&pageSize=$pageSize&pageNumber=$pageNumber&withPaging=$withPaging&status=$status';
 
-  ///API profile
-  static String profile() => '/api/MobUsers/Update';
+  /* endregion Dashboard */
 
-  ///API notifications
+  //region Profile
+  static String profile() => '/api/MobUsers/Update';
+  //endregion Profile
+
+  //region Notifications
   static String notification({
     required String studyYear,
     required int pageSize,
@@ -70,4 +76,5 @@ abstract class AppUrls {
     required bool withPaging,
   }) =>
       '/api/MobNotifications/GetFiltered?studyYear=$studyYear&pageSize=$pageSize&pageNumber=$pageNumber&withPaging=$withPaging';
+  //endregion Notifications
 }

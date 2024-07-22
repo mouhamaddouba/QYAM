@@ -1,0 +1,71 @@
+// ignore_for_file: unnecessary_overrides
+
+import 'package:get/get.dart';
+
+import 'package:qyam_novers_mobile/app/features/student_dashboard/presentation/ui/student_dashboard_ui_state.dart';
+
+class StudentDashboardController extends GetxController {
+  //region State
+
+  final state = StudentDashboardUiState.defaultObj().obs;
+
+  //endregion State
+
+  //region Use Cases
+
+  //endregion Use Cases
+
+  //region Constructors
+
+  StudentDashboardController();
+
+  //endregion Constructors
+
+  //region Lifecycle
+
+  @override
+  InternalFinalCallback<void> get onStart {
+    return super.onStart;
+  }
+
+  @override
+  void onInit() {
+    super.onInit();
+
+    _workers();
+    _processArguments();
+  }
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+
+  @override
+  InternalFinalCallback<void> get onDelete {
+    return super.onDelete;
+  }
+
+  //endregion Lifecycle
+
+  //region Public functions
+
+  //endregion Public functions
+
+  //region Private functions
+
+  //region Private functions for dealing with events
+
+  //endregion Private functions for dealing with events
+
+  void _workers() {}
+
+  void _processArguments() {}
+
+//endregion Private functions
+}

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:qyam/app/core/values/export/export_values.dart';
-import 'package:qyam/app/global_widgets/app_button_widget.dart';
-import 'package:qyam/app/global_widgets/app_default_dialog_widget.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_strings.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_button_widget.dart';
+import 'package:qyam_novers_mobile/app/core/values/constants/app_constants.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_default_dialog_widget.dart';
 
 abstract class AppAlertUtils {
   static void showSnackBar({

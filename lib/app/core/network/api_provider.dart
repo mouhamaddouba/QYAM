@@ -1,9 +1,10 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:qyam/app/core/values/app_strings.dart';
-import 'package:qyam/app/core/values/constants/app_constants.dart';
-import 'package:qyam/app/core/values/constants/app_urls.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_strings.dart';
+import 'package:qyam_novers_mobile/app/core/values/constants/app_urls.dart';
+import 'package:qyam_novers_mobile/app/core/values/constants/app_constants.dart';
 
 class ApiProvider {
   static final Dio _dio = Dio(

@@ -1,5 +1,5 @@
 abstract class AppStrings {
-  ///region Network validation messages
+  //region Network validation messages
   static const String success = 'success';
   static const String badRequest = 'badRequest';
   static const String unAuthorized = 'unAuthorized';
@@ -9,19 +9,17 @@ abstract class AppStrings {
   static const String internalServerError = 'internalServerError';
   static const String urlNotFound = 'urlNotFound';
   static const String noInternetConnection = 'noInternetConnection';
+  //endregion Network validation messages
 
-  ///endregion Network validation messages
-
-  ///region Error App
+  //region Error App
   static const String failure = 'failure';
   static const String localFailure = 'localFailure';
   static const String serverFailure = 'serverFailure';
   static const String localException = 'localException';
   static const String serverException = 'serverException';
+  //endregion Error App
 
-  ///endregion Error App
-
-  ///region Alert messages
+  //region Alert messages
   static const String alertMassageNoContentText = 'alertMassageNoContentText';
   static const String alertSuccess = 'alertSuccess';
   static const String alertError = 'alertError';
@@ -30,12 +28,13 @@ abstract class AppStrings {
   static const String alert = 'alert';
   static const String ok = 'ok';
   static const String noticeLabel = 'noticeLabel';
-
-  ///endregion Alert messages
+  //endregion Alert messages
 
   static const String appName = "appName";
 
-  ///region auth UI
+  /* region Auth */
+
+  //region auth UI
   static const String student = 'student';
   static const String teacher = 'teacher';
   static const String studentLogin = 'loginStudent';
@@ -45,10 +44,9 @@ abstract class AppStrings {
   static const String phoneNumber = 'phoneNumber';
   static const String password = 'password';
   static const String login = 'login';
+  //endregion auth UI
 
-  ///endregion auth UI
-
-  ///region Error Auth
+  //region Error Auth
   static const String phoneNumberRequired = 'phoneNumberRequired';
   static const String passwordRequired = 'passwordRequired';
   static const String isTeacherNotStudent = 'isTeacherNotStudent';
@@ -57,19 +55,19 @@ abstract class AppStrings {
   static const String isStudentNotTeacher = 'isStudentNotTeacher';
   static const String isAccounterNotTeacher = 'isAccounterNotTeacher';
   static const String isStaffNotTeacher = 'isStaffNotTeacher';
+  //endregion Error Auth
 
-  ///endregion Error Auth
+  /* endregion Auth */
 
-  ///region dashboard pages
+  //region dashboard pages
   static const String classes = 'classes';
   static const String payments = 'payments';
   static const String attendance = 'attendance';
   static const String teacherDelays = 'teacherDelays';
   static const String exams = 'exams';
+  //endregion dashboard pages
 
-  ///endregion dashboard pages
-
-  ///region Classes
+  //region Classes
   static const String sunday = 'sunday';
   static const String monday = 'monday';
   static const String tuesday = 'tuesday';
@@ -80,10 +78,9 @@ abstract class AppStrings {
   static const String group = 'group';
   static const String timing = 'timing';
   static const String noClasses = 'noClasses';
+  //endregion Classes
 
-  ///endregion Classes
-
-  ///region payments
+  //region payments
   static const String totalPaid = 'totalPaid';
   static const String totalShouldPaid = 'totalShouldPaid';
   static const String totalRemainPaid = 'totalRemainPaid';
@@ -94,20 +91,18 @@ abstract class AppStrings {
   static const String notes = 'notes';
   static const String nothing = 'nothing';
   static const String noPayments = 'noPayments';
+  //endregion payments
 
-  ///endregion payments
-
-  ///region lates
+  //region lates
   static const String noLates = 'noLates';
   static const String selectADate = 'selectADate';
   static const String from = 'from';
   static const String to = 'to';
   static const String minute = 'minute';
   static const String minutes = 'minutes';
+  //endregion lates
 
-  ///endregion lates
-
-  ///region exams
+  //region exams
   static const String doneTab = 'done';
   static const String newTab = 'new';
   static const String questionsDelivered = 'questionsDelivered';
@@ -123,10 +118,9 @@ abstract class AppStrings {
   static const String adminNots = 'adminNots';
   static const String noNots = 'noNots';
   static const String noExam = "noExam";
+  //endregion exams
 
-  ///endregion exams
-
-  ///region profile
+  //region profile
   static const String myAccount = 'myAccount';
   static const String language = "language";
   static const String englishLanguage = "englishLanguage";
@@ -140,10 +134,9 @@ abstract class AppStrings {
   static const String privacyPolice = 'privacyPolice';
   static const String deleteAccount = 'deleteAccount';
   static const String logout = 'logout';
+  //endregion profile
 
-  ///endregion profile
-
-  ///region Account
+  //region Account
   static const String profile = 'profile';
   static const String profileImage = "profileImage";
   static const String fullName = 'fullName';
@@ -157,15 +150,13 @@ abstract class AppStrings {
   static const String logoutAlert = 'logoutAlert';
   static const String confirm = 'confirm';
   static const String cancel = 'cancel';
+  //endregion Account
 
-  ///endregion Account
-
-  ///region notification
+  //region notification
   static const String notification = 'notification';
   static const String notificationDetails = 'notificationDetails';
   static const String noNotification = 'noNotification';
   static const String unKnowSender = 'unKnowSender';
   static const String unKnowEmail = 'unKnowEmail';
-
-  ///endregion notification
+  //endregion notification
 }

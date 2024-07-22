@@ -8,10 +8,11 @@ import 'package:get/get.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/core/values/constants/app_assets.dart';
-import 'package:qyam/app/core/values/constants/app_constants.dart';
-import 'package:qyam/app/global_widgets/app_image_preview_widget.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/core/values/constants/app_assets.dart';
+import 'package:qyam_novers_mobile/app/core/values/constants/app_constants.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_image_preview_widget.dart';
 
 class AppImageWidget extends StatelessWidget {
   final String? path;
@@ -38,7 +39,7 @@ class AppImageWidget extends StatelessWidget {
   final Widget Function(BuildContext, Object, StackTrace?)? errorBuilder;
 
   const AppImageWidget({
-    super.key,
+    Key? key,
     this.path,
     this.pathWithoutCompressing,
     this.tag,
@@ -61,7 +62,7 @@ class AppImageWidget extends StatelessWidget {
     this.isCenter = true,
     this.errorBuilder,
     this.deleteCashAfter1Day = false,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

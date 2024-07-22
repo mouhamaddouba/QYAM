@@ -1,5 +1,6 @@
-import 'package:qyam/app/core/error/failures.dart';
-import 'package:qyam/app/core/network_response/network_response.dart';
+import 'package:qyam_novers_mobile/app/core/error/failures.dart';
+
+import 'package:qyam_novers_mobile/app/core/network_response/network_response.dart';
 
 abstract class DataState<T> {
   final T data;

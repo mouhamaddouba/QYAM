@@ -1,7 +1,7 @@
-import 'package:qyam/app/core/values/app_strings.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_strings.dart';
 
 final Map<String, String> enUS = {
-  ///region Network validation messages
+  //region Network validation messages
   AppStrings.success: 'Success',
   AppStrings.badRequest: 'Bad request',
   AppStrings.unAuthorized: 'Unauthorized',
@@ -12,19 +12,17 @@ final Map<String, String> enUS = {
       'Internal service error, please contact support',
   AppStrings.urlNotFound: 'URL not found',
   AppStrings.noInternetConnection: 'No internet connection',
+  //endregion Network validation messages
 
-  ///endregion Network validation messages
-
-  ///region Error App
+  //region Error App
   AppStrings.failure: 'Failure',
   AppStrings.localFailure: 'Local storage failure',
   AppStrings.serverFailure: 'Server failure',
   AppStrings.localException: 'Local storage exception',
   AppStrings.serverException: 'Server exception',
+  //endregion Error App
 
-  ///endregion Error App
-
-  ///region Alert messages
+  //region Alert messages
   AppStrings.alertMassageNoContentText: 'Message does not contain text',
   AppStrings.alertSuccess: 'Success',
   AppStrings.alertError: 'Error',
@@ -32,12 +30,13 @@ final Map<String, String> enUS = {
   AppStrings.alertInfo: 'Info',
   AppStrings.alert: 'Alert',
   AppStrings.ok: 'OK',
-
-  ///endregion Alert messages
+  //endregion Alert messages
 
   AppStrings.appName: 'QYAM',
 
-  ///region auth UI
+  /* region Auth */
+
+  //region auth UI
   AppStrings.student: 'Student',
   AppStrings.teacher: 'Teacher',
   AppStrings.studentLogin: 'Student Login',
@@ -47,10 +46,9 @@ final Map<String, String> enUS = {
   AppStrings.phoneNumber: 'Phone Number',
   AppStrings.password: 'Password',
   AppStrings.login: 'Login',
+  //endregion auth UI
 
-  ///endregion auth UI
-
-  ///region Error Auth
+  //region Error Auth
   AppStrings.phoneNumberRequired: 'Phone number is required',
   AppStrings.passwordRequired: 'Password is required',
   AppStrings.isTeacherNotStudent: 'You are a teacher, not a student',
@@ -59,19 +57,19 @@ final Map<String, String> enUS = {
   AppStrings.isStudentNotTeacher: 'You are a student, not a teacher',
   AppStrings.isAccounterNotTeacher: 'You are an accountant, not a teacher',
   AppStrings.isStaffNotTeacher: 'You are a staff member, not a teacher',
+  //endregion Error Auth
 
-  ///endregion Error Auth
+  /* endregion Auth */
 
-  ///region dashboard pages
+  //region dashboard pages
   AppStrings.classes: 'Classes',
   AppStrings.payments: 'Payments',
   AppStrings.attendance: 'Attendance',
   AppStrings.teacherDelays: 'Delays',
   AppStrings.exams: 'Exams',
+  //endregion dashboard pages
 
-  ///endregion dashboard pages
-
-  ///region classes
+  //region classes
   AppStrings.sunday: 'Sunday',
   AppStrings.monday: 'Monday',
   AppStrings.tuesday: 'Tuesday',
@@ -82,10 +80,9 @@ final Map<String, String> enUS = {
   AppStrings.group: 'Group',
   AppStrings.timing: 'Timing',
   AppStrings.noClasses: 'No classes for today  ^_^',
+  //endregion classes
 
-  ///endregion classes
-
-  ///region payments
+  //region payments
   AppStrings.totalPaid: 'Total Paid',
   AppStrings.totalShouldPaid: 'Total Should Paid',
   AppStrings.totalRemainPaid: 'Remaining Amount',
@@ -96,20 +93,18 @@ final Map<String, String> enUS = {
   AppStrings.notes: 'Notes',
   AppStrings.nothing: 'Nothing',
   AppStrings.noPayments: 'No payments available ^_^',
+  //endregion payments
 
-  ///endregion payments
-
-  ///region lates
+  //region lates
   AppStrings.selectADate: 'Select a Date',
   AppStrings.noLates: 'No delays available ^_^',
   AppStrings.from: 'From',
   AppStrings.to: 'To',
   AppStrings.minute: 'Minute',
   AppStrings.minutes: 'Minutes',
+  //endregion lates
 
-  ///endregion lates
-
-  ///region exams
+  //region exams
   AppStrings.newTab: 'Upcoming',
   AppStrings.doneTab: 'Completed',
   AppStrings.questionsDelivered: 'Form Delivered',
@@ -125,10 +120,9 @@ final Map<String, String> enUS = {
   AppStrings.adminNots: 'Admin Notes',
   AppStrings.noNots: 'No notes',
   AppStrings.noExam: 'No exams available ^_^',
+  //endregion exams
 
-  ///endregion exams
-
-  ///region profile
+  //region profile
   AppStrings.myAccount: 'My Account',
   AppStrings.language: 'App Language',
   AppStrings.arabicLanguage: 'Arabic',
@@ -142,10 +136,9 @@ final Map<String, String> enUS = {
   AppStrings.privacyPolice: 'Privacy Policy',
   AppStrings.deleteAccount: 'Delete Account',
   AppStrings.logout: 'Logout',
+  //endregion profile
 
-  ///endregion profile
-
-  ///region Account
+  //region Account
   AppStrings.profile: 'Profile',
   AppStrings.profileImage: 'Profile Image',
   AppStrings.fullName: 'Full Name',
@@ -159,15 +152,13 @@ final Map<String, String> enUS = {
   AppStrings.logoutAlert: 'Are you sure you want to log out?',
   AppStrings.confirm: 'Confirm',
   AppStrings.cancel: 'Cancel',
+  //endregion Account
 
-  ///endregion Account
-
-  ///region notification
+  //region notification
   AppStrings.notification: 'Notifications',
   AppStrings.notificationDetails: 'Notification Details',
   AppStrings.noNotification: 'No notifications available ^_^',
   AppStrings.unKnowSender: 'The sender is unknown',
   AppStrings.unKnowEmail: 'No email',
-
-  ///endregion notification
+  //endregion notification
 };

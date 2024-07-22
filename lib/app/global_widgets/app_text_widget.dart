@@ -1,10 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:qyam/app/core/themes/app_themes.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/global_widgets/app_ripple_widget.dart';
+import 'package:qyam_novers_mobile/app/core/themes/app_themes.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_ripple_widget.dart';
 
 class AppTextWidget extends StatelessWidget {
   final String text;
@@ -39,7 +39,7 @@ class AppTextWidget extends StatelessWidget {
 
   const AppTextWidget(
     this.text, {
-    super.key,
+    Key? key,
     this.textStyle,
     this.textColor = AppColors.gray01,
     this.fontSize = AppDimensions.fontSize16,
@@ -67,7 +67,7 @@ class AppTextWidget extends StatelessWidget {
     this.onLongTap,
     this.isCenterVertical = false,
     this.isAutoSized = false,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

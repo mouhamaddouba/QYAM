@@ -1,5 +1,5 @@
 abstract class AppDimensions {
-  ///region fonts
+  //region fonts
   static const double minFontSize = 09.0;
   static const double _fontSizeScale = 1.5;
   static const double fontSize02 = 02.0 * _fontSizeScale;
@@ -16,10 +16,9 @@ abstract class AppDimensions {
   static const double fontSize20 = 20.0 * _fontSizeScale;
   static const double fontSize22 = 22.0 * _fontSizeScale;
   static const double fontSize32 = 32.0 * _fontSizeScale;
+  //endregion fonts
 
-  ///endregion fonts
-
-  ///region padding or margin
+  //region padding or margin
   static const double paddingOrMargin2 = 2.0;
   static const double paddingOrMargin4 = 4.0;
   static const double paddingOrMargin6 = 6.0;
@@ -47,10 +46,9 @@ abstract class AppDimensions {
   static const double paddingOrMargin80 = 80.0;
   static const double paddingOrMargin90 = 90.0;
   static const double paddingOrMargin100 = 100.0;
+  //endregion padding or margin
 
-  ///endregion padding or margin
-
-  ///region icon size
+  //region icon size
   static const double iconSize05 = 5.0;
   static const double iconSize10 = 10.0;
   static const double iconSize12 = 12.0;
@@ -71,10 +69,9 @@ abstract class AppDimensions {
   static const double iconSize36 = 36.0;
   static const double iconSize38 = 38.0;
   static const double iconSize40 = 40.0;
+  //endregion icon size
 
-  ///endregion icon size
-
-  ///region width
+  //region width
   static const double width01 = 1.0;
   static const double width02 = 2.0;
   static const double width03 = 3.0;
@@ -106,10 +103,9 @@ abstract class AppDimensions {
   static const double width280 = 280.0;
   static const double width300 = 300.0;
   static const double width320 = 320.0;
+  //endregion width
 
-  ///endregion width
-
-  ///region height
+  //region height
   static const double height_18 = 1.8;
   static const double height01 = 1.0;
   static const double height02 = 2.0;
@@ -145,10 +141,9 @@ abstract class AppDimensions {
   static const double height280 = 280.0;
   static const double height300 = 300.0;
   static const double height320 = 320.0;
+  //endregion height
 
-  ///endregion height
-
-  ///region Radius
+  //region Radius
   static const double radius01 = 01.0;
   static const double radius02 = 02.0;
   static const double radius03 = 03.0;
@@ -183,10 +178,9 @@ abstract class AppDimensions {
   static const double radius46 = 46.0;
   static const double radius48 = 48.0;
   static const double radius50 = 50.0;
+  //endregion Radius
 
-  ///endregion Radius
-
-  ///region Thickness
+  //region Thickness
   static const double thickness_08 = 0.8;
   static const double thickness_15 = 1.5;
   static const double thickness_18 = 1.8;
@@ -200,10 +194,9 @@ abstract class AppDimensions {
   static const double thickness08 = 08.0;
   static const double thickness09 = 09.0;
   static const double thickness10 = 10.0;
+  //endregion Thickness
 
-  ///endregion Thickness
-
-  ///region elevation
+  //region elevation
   static const double elevation01 = 01.0;
   static const double elevation02 = 02.0;
   static const double elevation03 = 03.0;
@@ -219,10 +212,9 @@ abstract class AppDimensions {
   static const double elevation13 = 13.0;
   static const double elevation14 = 14.0;
   static const double elevation15 = 15.0;
+  //endregion elevation
 
-  ///endregion elevation
-
-  ///region flex expand
+  //region flex expand
   static const int flexExpand01 = 01;
   static const int flexExpand02 = 02;
   static const int flexExpand03 = 03;
@@ -233,8 +225,7 @@ abstract class AppDimensions {
   static const int flexExpand08 = 08;
   static const int flexExpand09 = 09;
   static const int flexExpand10 = 10;
-
-  ///endregion flex expand
+  //endregion flex expand
 
   static const double zero = 0.0;
 }

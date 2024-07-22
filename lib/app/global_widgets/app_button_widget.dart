@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/global_widgets/app_ripple_widget.dart';
-import 'package:qyam/app/global_widgets/app_text_widget.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_text_widget.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_ripple_widget.dart';
 
 class AppButtonWidget extends StatelessWidget {
   final String text;
@@ -21,7 +22,7 @@ class AppButtonWidget extends StatelessWidget {
   final EdgeInsetsDirectional? padding;
 
   const AppButtonWidget({
-    super.key,
+    Key? key,
     required this.text,
     this.fontSize = AppDimensions.fontSize12,
     this.width,
@@ -36,7 +37,7 @@ class AppButtonWidget extends StatelessWidget {
     this.icon,
     this.afterTextIcon,
     this.padding = EdgeInsetsDirectional.zero,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

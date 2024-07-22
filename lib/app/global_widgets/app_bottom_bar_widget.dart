@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:qyam/app/global_widgets/app_icon_widget.dart';
-import 'package:qyam/app/global_widgets/app_text_widget.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_icon_widget.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_text_widget.dart';
 
 import '../core/values/export/export_values.dart';
 
@@ -12,12 +12,13 @@ class AppBottomBarWidget extends StatelessWidget {
   final bool isBottomIndicator;
 
   const AppBottomBarWidget({
-    super.key,
+    Key? key,
     required this.items,
     required this.selectedIndex,
     required this.onTap,
     this.isBottomIndicator = false,
-  }) : assert(items.length <= 5);
+  })  : assert(items.length <= 5),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +40,8 @@ class AppBottomBarWidget extends StatelessWidget {
                         // style active tab
                         ? AnimatedContainer(
                             duration: const Duration(
-                              milliseconds: AppConstants.duration150,
+                              milliseconds:
+                                  AppConstants.animateContainerClasses,
                             ),
 
                             width: AppDimensions.width140.w,
@@ -75,7 +77,7 @@ class AppBottomBarWidget extends StatelessWidget {
                                   ),
 
                                 // space
-                                const SizedBox(
+                                SizedBox(
                                   width: AppDimensions.width08,
                                 ),
 

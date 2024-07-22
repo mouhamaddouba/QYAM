@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
 
 class AppRippleWidget extends StatelessWidget {
   final void Function()? onTap;
@@ -9,13 +10,13 @@ class AppRippleWidget extends StatelessWidget {
   final BorderRadius? borderRadius;
 
   const AppRippleWidget({
-    super.key,
+    Key? key,
     this.onTap,
     this.onLongPress,
     required this.child,
     this.radius = AppDimensions.radius10,
     this.borderRadius,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

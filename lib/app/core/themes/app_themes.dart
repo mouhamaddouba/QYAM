@@ -3,9 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:qyam/app/core/storage/app_storage.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/storage/app_storage.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
 
 abstract class AppThemes {
   //region Themes & Fonts Keys

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/utils.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/core/values/app_strings.dart';
-import 'package:qyam/app/global_widgets/app_button_widget.dart';
-import 'package:qyam/app/global_widgets/app_icon_widget.dart';
-import 'package:qyam/app/global_widgets/app_text_widget.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_strings.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_button_widget.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_icon_widget.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_text_widget.dart';
 
 // ignore: must_be_immutable
 class AppDefaultDialogWidget extends StatelessWidget {

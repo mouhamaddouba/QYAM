@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
-import 'package:qyam/app/features/splash/presentation/provider/splash_controller.dart';
+
+import 'package:qyam_novers_mobile/app/features/splash/presentation/splash_controller.dart';
 
 class SplashBinding extends Bindings {
   @override

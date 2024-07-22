@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/global_widgets/app_image_widget.dart';
-import 'package:qyam/app/global_widgets/app_ripple_widget.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_image_widget.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_ripple_widget.dart';
 
 class AppIconWidget extends StatelessWidget {
   final IconData? iconData;
@@ -20,7 +21,7 @@ class AppIconWidget extends StatelessWidget {
   final double backgroundPadding;
 
   const AppIconWidget({
-    super.key,
+    Key? key,
     this.iconData,
     this.iconPath,
     this.onTap,
@@ -34,7 +35,7 @@ class AppIconWidget extends StatelessWidget {
     this.containerColor,
     this.backgroundColor = AppColors.gray02,
     this.backgroundPadding = AppDimensions.zero,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,17 +1,16 @@
 part of 'app_pages.dart';
 
 abstract class AppRoutes {
-  /// Splash
+  // Splash
   static const String splash = '/splash';
 
-  ///region Auth
+  //region Auth
   static const String mainLogin = '/mainLogin';
   static const String studentLogin = '/studentLogin';
   static const String teacherLogin = '/teacherLogin';
+  //endregion Auth
 
-  ///endregion Auth
-
-  ///region Student Dashboard
+  //region Student Dashboard
   static const String studentDashboard = '/studentDashboard';
 
   static const String studentDashboardClasses = '/studentDashboardClasses';
@@ -21,10 +20,9 @@ abstract class AppRoutes {
   static const String studentDashboardAttendances =
       '/studentDashboardAttendances';
   static const String studentDashboardExams = '/studentDashboardExams';
+  //endregion Student Dashboard
 
-  ///endregion Student Dashboard
-
-  ///region Teacher Dashboard
+  //region Teacher Dashboard
   static const String teacherDashboard = '/teacherDashboard';
 
   static const String teacherDashboardClasses = '/teacherDashboardClasses';
@@ -33,20 +31,17 @@ abstract class AppRoutes {
       '/teacherDashboardPaymentsDetails';
   static const String teacherDashboardLates = '/teacherDashboardLates';
   static const String teacherDashboardExams = '/teacherDashboardExams';
+  //endregion Teacher Dashboard
 
-  ///endregion Teacher Dashboard
-
-  ///region Notifications
+  //region Notifications
   static const String notifications = '/notifications';
   static const String notificationsDetails = '/notificationsDetails';
+  //endregion Notifications
 
-  ///endregion Notifications
-
-  ///region Profile
+  //region Profile
   static const String studentProfile = '/studentProfile';
   static const String studentAccount = '/studentAccount';
   static const String teacherProfile = '/teacherProfile';
   static const String teacherAccount = '/teacherAccount';
-
-  ///endregion Profile
+  //endregion Profile
 }

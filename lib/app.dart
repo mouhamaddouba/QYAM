@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:qyam/app/core/themes/app_themes.dart';
-import 'package:qyam/app/core/translations/app_translations.dart';
-import 'package:qyam/app/core/values/app_strings.dart';
-import 'package:qyam/app/routes/app_pages.dart';
+
+import 'package:qyam_novers_mobile/app/core/translations/app_translations.dart';
+import 'package:qyam_novers_mobile/app/core/themes/app_themes.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_strings.dart';
+import 'package:qyam_novers_mobile/app/routes/app_pages.dart';
 
 class App extends StatelessWidget {
   const App({
-    super.key,
-  });
+    Key? key,
+  }) : super(
+          key: key,
+        );
 
   @override
   Widget build(BuildContext context) {
@@ -18,16 +21,16 @@ class App extends StatelessWidget {
 
       title: AppStrings.appName.tr,
 
-      /// Routing
+      // Routing
       getPages: AppPages.pages,
       initialRoute: AppRoutes.splash,
 
-      /// Theme
+      // Theme
       theme: AppThemes.getAppTheme(),
       darkTheme: AppThemes.getAppDarkTheme(),
       themeMode: AppThemes.getAppThemeMode(),
 
-      /// Locale
+      // Locale
       locale: AppTranslations.getAppLocale(),
       translations: AppTranslations(),
     );

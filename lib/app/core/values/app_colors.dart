@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  ///region light color scheme
+  //region light color scheme
   static const Color primary = Color(0xFF3e5aa9);
   static const Color onPrimary = Color(0xFFFFFFFF);
   static const Color primaryContainer = Color(0xFFdbe1ff);
@@ -33,8 +33,9 @@ abstract class AppColors {
 
   static const Color containerTab = Color(0xffdbe1ff);
   static const Color darkContainerTab = Color(0xff234290);
+  //endregion light color scheme
 
-  ///region dark color scheme
+  //region dark color scheme
   static const Color darkPrimary = Color(0xFFb4c5ff);
   static const Color darkOnPrimary = Color(0xFF002a78);
   static const Color darkPrimaryContainer = Color(0xFF234290);
@@ -55,8 +56,9 @@ abstract class AppColors {
   static const Color darkOnSurfaceVariant = Color(0xFFc5c6d0);
   static const Color darkShadow = Color(0xFF000000);
   static const Color darkScrim = Color(0xFF000000);
+  //endregion dark color scheme
 
-  ///region primary light
+  // //region primary ligh
   static const Color white01 = Colors.white;
   static const Color whiteBlue = Color(0xfff3f7fb);
   static const Color iconLight = onLight300;
@@ -71,12 +73,12 @@ abstract class AppColors {
   static const Color black02 = Color(0x8f000000);
   static const Color red01 = Color(0xFFEA6666);
 
-  ///region usecase dialog
+  //region usecase dialog
   static const Color errorLight = Color(0xff891820);
   static const Color warningLight = Color(0xffe7831c);
   static const Color successLight = Color(0xff09964b);
 
-  ///region gradient light
+  //region gradient light
   static const LinearGradient linearGradient01 = LinearGradient(
     begin: AlignmentDirectional.bottomStart,
     end: AlignmentDirectional.topEnd,
@@ -84,7 +86,7 @@ abstract class AppColors {
     stops: [0.2, 1.8],
   );
 
-  ///region gradient dark
+  //region gradient dark
   static const LinearGradient darkLinearGradient01 = LinearGradient(
     begin: AlignmentDirectional.bottomStart,
     end: AlignmentDirectional.topEnd,

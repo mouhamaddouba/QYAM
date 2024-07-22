@@ -1,7 +1,7 @@
-import 'package:qyam/app/core/values/app_strings.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_strings.dart';
 
 final Map<String, String> arSA = {
-  ///region Network validation messages
+  //region Network validation messages
   AppStrings.success: 'ناجح',
   AppStrings.badRequest: 'إستجابة سيئة',
   AppStrings.unAuthorized: 'غير مسجل',
@@ -11,19 +11,17 @@ final Map<String, String> arSA = {
   AppStrings.internalServerError: 'خطأ داخلي في الخدمة ، يرجى الاتصال بالدعم',
   AppStrings.urlNotFound: 'الرابط غير موجود',
   AppStrings.noInternetConnection: 'لا يوجد إتصال بالإنترنت',
+  //endregion Network validation messages
 
-  ///endregion Network validation messages
-
-  ///region Error App
+  //region Error App
   AppStrings.failure: 'فشل',
   AppStrings.localFailure: 'فشل في التخزين',
   AppStrings.serverFailure: 'فشل في السيرفر',
   AppStrings.localException: 'خطأ في التخزين',
   AppStrings.serverException: 'خطأ في السيرفر',
+  //endregion Error App
 
-  ///endregion Error App
-
-  ///region Alert messages
+  //region Alert messages
   AppStrings.alertMassageNoContentText: 'تحذير الرسالة لا تحوي نص',
   AppStrings.alertSuccess: 'نجاح',
   AppStrings.alertError: 'خطأ',
@@ -31,12 +29,13 @@ final Map<String, String> arSA = {
   AppStrings.alertInfo: 'معلومات',
   AppStrings.alert: 'تحذير',
   AppStrings.ok: 'حسناً',
-
-  ///endregion Alert messages
+  //endregion Alert messages
 
   AppStrings.appName: 'QYAM',
 
-  ///region auth UI
+  /* region Auth */
+
+  //region auth UI
   AppStrings.student: 'الطالب',
   AppStrings.teacher: 'الأستاذ',
   AppStrings.studentLogin: 'تسجيل الطالب',
@@ -46,10 +45,9 @@ final Map<String, String> arSA = {
   AppStrings.phoneNumber: 'رقم الهاتف',
   AppStrings.password: 'كلمة المرور',
   AppStrings.login: 'تسجيل الدخول',
+  //endregion auth UI
 
-  ///endregion auth UI
-
-  ///region Error Auth
+  //region Error Auth
   AppStrings.phoneNumberRequired: 'رقم الهاتف مطلوب',
   AppStrings.passwordRequired: 'كلمة السر مطلوبة',
   AppStrings.isTeacherNotStudent: 'أنت أستاذ ولست طالب',
@@ -58,19 +56,19 @@ final Map<String, String> arSA = {
   AppStrings.isStudentNotTeacher: 'أنت طالب ولست أستاذ',
   AppStrings.isAccounterNotTeacher: 'أنت محاسب ولست أستاذ',
   AppStrings.isStaffNotTeacher: 'أنت موظف ولست أستاذ',
+  //endregion Error Auth
 
-  ///endregion Error Auth
+  /* endregion Auth */
 
-  ///region dashboard pages
+  //region dashboard pages
   AppStrings.classes: 'الحصص',
   AppStrings.payments: 'الدفعات',
   AppStrings.attendance: 'الحضور',
   AppStrings.teacherDelays: 'التأخيرات',
   AppStrings.exams: 'المذاكرات',
+  //endregion dashboard pages
 
-  ///endregion dashboard pages
-
-  ///region classes
+  //region classes
   AppStrings.sunday: 'الأحد',
   AppStrings.monday: 'الإثنين',
   AppStrings.tuesday: 'الثلاثاء',
@@ -81,10 +79,9 @@ final Map<String, String> arSA = {
   AppStrings.group: 'الفئة',
   AppStrings.timing: 'التوقيت',
   AppStrings.noClasses: 'لا يوجد حصص اليوم  ^_^',
+  //endregion classes
 
-  ///endregion classes
-
-  ///region payments
+  //region payments
   AppStrings.totalPaid: 'المبلغ الكلي',
   AppStrings.totalShouldPaid: 'المبلغ الواجب دفعه',
   AppStrings.totalRemainPaid: 'المبلغ المتبقي',
@@ -95,20 +92,18 @@ final Map<String, String> arSA = {
   AppStrings.notes: 'ملاحظات',
   AppStrings.nothing: 'لايوجد',
   AppStrings.noPayments: 'لا يوجد دفعات  ^_^',
+  //endregion payments
 
-  ///endregion payments
-
-  ///region lates
+  //region lates
   AppStrings.selectADate: 'إختر تاريخ',
   AppStrings.noLates: 'لا يوجد تأخيرات  ^_^',
   AppStrings.from: 'من',
   AppStrings.to: 'إلى',
   AppStrings.minute: 'دقيقة',
   AppStrings.minutes: 'دقائق',
+  //endregion lates
 
-  ///endregion lates
-
-  ///region exams
+  //region exams
   AppStrings.newTab: 'قادمة',
   AppStrings.doneTab: 'منجزة',
   AppStrings.questionsDelivered: 'تم تسليم النموذج',
@@ -124,10 +119,9 @@ final Map<String, String> arSA = {
   AppStrings.adminNots: 'ملاحظات المدير',
   AppStrings.noNots: 'لا يوجد ملاحظات',
   AppStrings.noExam: ' لا يوجد مذاكرات  ^_^',
+  //endregion exams
 
-  ///endregion exams
-
-  ///region profile
+  //region profile
   AppStrings.myAccount: 'الملف الشخصي',
   AppStrings.language: 'لغة التطبيق',
   AppStrings.arabicLanguage: 'العربية',
@@ -141,10 +135,9 @@ final Map<String, String> arSA = {
   AppStrings.privacyPolice: 'الخصوصية',
   AppStrings.deleteAccount: 'حذف حسابي',
   AppStrings.logout: 'تسجيل الخروج',
+  //endregion profile
 
-  ///endregion profile
-
-  ///region Account
+  //region Account
   AppStrings.profile: 'الملف الشخصي',
   AppStrings.profileImage: 'الصورة الشخصية',
   AppStrings.fullName: 'الإسم الكامل',
@@ -158,15 +151,13 @@ final Map<String, String> arSA = {
   AppStrings.logoutAlert: 'هل تريد تسجيل الخروج ؟',
   AppStrings.confirm: 'تأكيد',
   AppStrings.cancel: 'إلغاء',
+  //endregion Account
 
-  ///endregion Account
-
-  ///region notification
+  //region notification
   AppStrings.notification: 'الإشعارات',
   AppStrings.notificationDetails: 'تفاصيل الإشعار',
   AppStrings.noNotification: 'لا يوجد إشعارات  ^_^',
   AppStrings.unKnowSender: 'المرسل غير معروف',
   AppStrings.unKnowEmail: 'لا يوجد إيميل'
-
-  ///endregion notification
+  //endregion notification
 };

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/global_widgets/app_icon_widget.dart';
-import 'package:qyam/app/global_widgets/app_text_widget.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_icon_widget.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_text_widget.dart';
 
 class AppTabBarWidget extends StatelessWidget {
   final TabController? tabController;
@@ -16,7 +17,7 @@ class AppTabBarWidget extends StatelessWidget {
   final bool isScrollable;
 
   const AppTabBarWidget({
-    super.key,
+    Key? key,
     this.tabController,
     required this.icons,
     required this.titles,
@@ -26,7 +27,7 @@ class AppTabBarWidget extends StatelessWidget {
     required this.numberTabs,
     this.isBottomIndicator = false,
     this.isScrollable = false,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

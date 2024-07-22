@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/global_widgets/app_ripple_widget.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/global_widgets/app_ripple_widget.dart';
 
 class AppDropDownWidget<T> extends StatefulWidget {
   final bool isEnabled;
@@ -19,7 +19,7 @@ class AppDropDownWidget<T> extends StatefulWidget {
   final double radius;
 
   const AppDropDownWidget({
-    super.key,
+    Key? key,
     this.isEnabled = true,
     required this.selectedItem,
     required this.items,
@@ -27,7 +27,7 @@ class AppDropDownWidget<T> extends StatefulWidget {
     this.value,
     this.onChange,
     this.radius = AppDimensions.radius08,
-  });
+  }) : super(key: key);
 
   @override
   _AppDropDownWidgetState<T> createState() => _AppDropDownWidgetState<T>();

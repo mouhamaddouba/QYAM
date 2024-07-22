@@ -1,4 +1,4 @@
-import 'package:qyam/app/core/values/app_strings.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_strings.dart';
 
 import 'package:get/get.dart';
 import 'package:equatable/equatable.dart';

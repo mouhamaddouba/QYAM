@@ -1,13 +1,14 @@
 import 'dart:ui';
 
 import 'package:get/get.dart';
-import 'package:qyam/app/core/storage/app_storage.dart';
 
 import 'from/ar_sa_translations.dart';
 import 'from/en_us_translations.dart';
 
+import 'package:qyam_novers_mobile/app/core/storage/app_storage.dart';
+
 class AppTranslations extends Translations {
-  ///region Languages Keys
+  //region Languages Keys
 
   static const String arabicLang = 'ar';
   static const String arabicCountry = 'SA';
@@ -18,7 +19,7 @@ class AppTranslations extends Translations {
   static const String englishLocale =
       '${englishLang}_$englishCountry'; // 'en_US'
 
-  ///endregion
+  //endregion
 
   @override
   Map<String, Map<String, String>> get keys => {
@@ -45,7 +46,7 @@ class AppTranslations extends Translations {
       locale,
     );
 
-    /// For Settings switch
+    // For Settings switch
     final lang = locale.split('_').first;
     if (lang == arabicLang) {
       await AppStorage.write(
@@ -66,7 +67,7 @@ class AppTranslations extends Translations {
     );
   }
 
-  /// Utils
+  // Utils
   static Locale _getLocale(String locale) {
     return Locale.fromSubtags(
       scriptCode: '_',

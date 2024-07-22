@@ -4,17 +4,18 @@ import 'package:flutter/material.dart';
 
 import 'package:photo_view/photo_view.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
 
 class AppImagePreviewWidget extends StatelessWidget {
   final String path;
   final dynamic tag;
 
   const AppImagePreviewWidget({
-    super.key,
+    Key? key,
     required this.path,
     this.tag,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

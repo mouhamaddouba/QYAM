@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'package:get/state_manager.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:qyam/app/core/values/app_colors.dart';
-import 'package:qyam/app/core/values/app_dimensions.dart';
-import 'package:qyam/app/core/values/constants/app_constants.dart';
+
+import 'package:qyam_novers_mobile/app/core/values/app_colors.dart';
+import 'package:qyam_novers_mobile/app/core/values/app_dimensions.dart';
+import 'package:qyam_novers_mobile/app/core/values/constants/app_constants.dart';
 
 class AppLoadingWidget extends GetView {
   // Page content
   final Widget? content;
   final Color overlayColor;
+  final double overlayColorOpacity;
   final bool isLoading;
   final String titleText;
   final String descriptionText;
@@ -22,6 +24,7 @@ class AppLoadingWidget extends GetView {
     super.key,
     this.content,
     this.overlayColor = AppColors.black00,
+    this.overlayColorOpacity = AppConstants.appLoadingOpacity,
     this.isLoading = true,
     this.titleText = AppConstants.emptyText,
     this.descriptionText = AppConstants.emptyText,
